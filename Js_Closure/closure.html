@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <html http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tuitorial</title>
+    <p id="demo"></p>
+</head>
+<body>
+    <!-- <script>
+        let =10;//>global var>
+        function My_function(){
+            let b =20//local var
+            document.write(a+b)
+        }
+        My_function()
+    </script> -->
+    <script>
+        var a =10
+        function First_func(){
+            var b =20
+            function Second_func(){
+                var c = 20 + a+b
+                return c
+            }
+            return Second_func();
+        }
+        var sum =First_func()
+        document.write("The sum is " + sum + '<script>'
+         )
+    </script>        
+    </body>
+</html>
